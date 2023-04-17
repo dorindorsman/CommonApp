@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "CommonApp"
-include ':clothes'
 include ':common'
 include ':shoes'
+include ':clothes'
