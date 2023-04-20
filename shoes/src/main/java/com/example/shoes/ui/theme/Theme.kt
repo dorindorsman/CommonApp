@@ -7,28 +7,35 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 
 private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
-    secondary = Teal200
+    primary = primaryDark,
+    primaryVariant = primaryVariantDark,
+    secondary = secondaryDark,
+    secondaryVariant = secondaryVariantDark,
+    background = backgroundDark,
+    surface = surfaceDark,
+    onPrimary = onPrimaryDark,
+    onSecondary = onSecondaryDark,
+    onBackground = onBackgroundDark,
+    onSurface = onSurfaceDark,
 )
 
 private val LightColorPalette = lightColors(
-    primary = Purple500,
-    primaryVariant = Purple700,
-    secondary = Teal200
-
-    /* Other default colors to override
-    background = Color.White,
-    surface = Color.White,
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
+    primary = primaryLight,
+    primaryVariant = primaryVariantLight,
+    secondary = secondaryLight,
+    secondaryVariant = secondaryVariantLight,
+    background = backgroundLight,
+    surface = surfaceLight,
+    onPrimary = onPrimaryLight,
+    onSecondary = onSecondaryLight,
+    onBackground = onBackgroundLight,
+    onSurface = onSurfaceLight,
 )
 
+
+
 @Composable
-fun CommonAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+fun ShoesAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     val colors = if (darkTheme) {
         DarkColorPalette
     } else {

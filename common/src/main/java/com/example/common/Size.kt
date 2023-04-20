@@ -1,7 +1,8 @@
 package com.example.common
 
 data class Size(
-    val uk: Int,
-    val us: Int,
-    val eu: Int,
+    val gender : GenderType,
+    val uk: String,
+    val us: String,
+    val eu: String,
 )
